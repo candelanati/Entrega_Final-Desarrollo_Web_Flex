@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li class="nav_importantes"><a href="../index.html">Inicio</a></li>
+                <div class="">
+                    <li><a href="./Portfolio.html">Portfolio</a></li>
+                    <li><a href="./Curriculum.html">Curriculum</a></li>
+                    <li><a href="./Proyectos.html">Proyectos</a></li>
+                </div>
+                <li class="nav_importantes"><a href="#" class="resaltado contacto_nav">Contacto</a></li>
+                <button class="hamburger_menu"> <!-- agregar al resto -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </ul>
+        </nav> 
+        
+    </header>
+    <main class="spacing-1 center_text">
+        <h1 class="resaltado spacing-2">Contactame</h1>
+        <p class="spacing-1">Para enviar una consulta complete el siguiente formulario.</p> 
+        <form class="spacing-1 left_text center_column">
+                <div class="spacing-2 ">
+                    <label for="form_header">Encabezado</label>
+                    <br>
+                    <input name="form_header" id="form_header" class="contact_page"></input>
+                </div>
+                <br>
+                <div class="">
+                    <label for="Message">Mensaje</label>
+                    <br>
+                    <textarea name="Message" id="Message" rows="13" class="contact_page"></textarea>
+                </div>
+                <br>
+                <button type="submit" id="web_button" class="spacing-1 web_button">Enviar</button>
+            </form>
+            <p class="resaltado spacing-0 note">*este mensaje será enviado por mail a lanaticandela11@gmail.com</p>
+            <p class="spacing-2">En caso de no querer enviar el formulario puede contactarse en las redes que se encuentran en la parte inferior de la página.</p>
+    </main>
+    <footer class="spacing-4">
+        <div id="contact">
+            <h2>Contacto</h2>
+            <a href="https://www.linkedin.com/in/candela-lanati-266089269" target="_blank">LinkedIn</a>
+            <br>
+            <a href="mailto:lanaticandela11@gmail.com" >GMail</a>
+            <!-- unica forma en la q me deja poner espaciado:
+            <div class="center_column">
+                <a href="https://www.linkedin.com/in/candela-lanati-266089269" target="_blank">LinkedIn</a>
+                
+                <a href="mailto:lanaticandela11@gmail.com" >GMail</a>
+            </div> -->
+        </div>
+    </footer>
+</body>
+</html>
