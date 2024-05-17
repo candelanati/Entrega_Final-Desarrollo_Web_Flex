@@ -112,11 +112,6 @@ h3{
 
 
 /*Svg tecnologías*/
-#tecnologias{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-}
 #tecnologias svg{
     height: 25px;
     transition: all 0.25s ease;
@@ -314,6 +309,10 @@ h3{
         height: 150px;
         width: 465px;
     }
+    #sobre_mi-mobile{
+        display:none;
+    }
+
 }
 @media screen and (max-width:1200px) {
     nav div {
@@ -339,6 +338,14 @@ h3{
 @media screen and (max-width:1700px) {
     #section_proyectos{
         flex-direction: column;
+    }
+}
+@media screen and (max-width:600px) {
+    #sobre_mi-pc{
+        display:none;
+    }
+    #sobre_mi-mobile{
+        display:block;
     }
 }
 
