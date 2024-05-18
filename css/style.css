@@ -439,29 +439,11 @@ h3{
         height: 150px;
         width: 465px;
     }
-
-    /*cards*/
-    .sliding-photo{
-        top: 15px;
-        width: 350px;
-    }
-    .section-portfolio:hover .sliding-photo {
-        transform: translateX(325px);
-    }
-    .section-portfolio:hover .slide-2{
-        transform: translateX(600px);
-    }
-    .section-curriculum:hover .sliding-photo {
-        transform: translateX(-300px);
-    }
-    .section-curriculum:hover .slide-2{
-        transform: translateX(-575px);
-    }
 }
-@media screen and (max-width:800px) {
-    /*cards small screens / mobile*/
+/*@media screen and (max-width:1000px) {
+    cards small screens / mobile
 
-}
+}*/
 
 @media screen and (max-width:1200px) {
     nav div {
@@ -476,14 +458,36 @@ h3{
     .hamburger_menu div{
         display: block;
     }
+    /* VER 
     #foto_proyecto{
         height: 150px;
     }
     #logo_proyecto{
         height: 100px;
         width: 400px;
+    }*/
+
+    main{
+        padding-inline: 50px;
     }
 
+    /*cards*/
+        .sliding-photo{
+            top: 20px;
+            width: 350px;
+        }
+        .section-portfolio:hover .sliding-photo {
+            transform: translateX(325px);
+        }
+        .section-portfolio:hover .slide-2{
+            transform: translateX(600px);
+        }
+        .section-curriculum:hover .sliding-photo {
+            transform: translateX(-300px);
+        }
+        .section-curriculum:hover .slide-2{
+            transform: translateX(-575px);
+        }
 }
 @media screen and (max-width:600px) {
     #section_proyectos{
