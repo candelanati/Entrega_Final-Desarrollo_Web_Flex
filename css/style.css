@@ -255,6 +255,7 @@ h3{
     position: absolute;
     display: none;
     height: 250px;
+    border-radius: 8px;
 }
 .logo_proyecto{
     position: relative;
@@ -438,7 +439,30 @@ h3{
         height: 150px;
         width: 465px;
     }
+
+    /*cards*/
+    .sliding-photo{
+        top: 15px;
+        width: 350px;
+    }
+    .section-portfolio:hover .sliding-photo {
+        transform: translateX(325px);
+    }
+    .section-portfolio:hover .slide-2{
+        transform: translateX(600px);
+    }
+    .section-curriculum:hover .sliding-photo {
+        transform: translateX(-300px);
+    }
+    .section-curriculum:hover .slide-2{
+        transform: translateX(-575px);
+    }
 }
+@media screen and (max-width:800px) {
+    /*cards small screens / mobile*/
+
+}
+
 @media screen and (max-width:1200px) {
     nav div {
         display: none;
