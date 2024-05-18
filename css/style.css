@@ -141,16 +141,21 @@ h3{
     width: 100%;
 }
 
-#title{
+.title{
     font-weight: bolder;
     font-size: xx-large;
 }
 
-#name{
+.name{
     /*font-size: small;*/
     font-weight: 200;
     font-size: x-large;
     margin-left: 10px;
+}
+
+.title_mobile{
+    display:none;
+    font-size: x-large;
 }
 
 
@@ -378,6 +383,12 @@ h3{
         padding-inline: 20px;
     }
     .contacto_nav{
+        display: none;
+    }
+    .title_mobile{
+        display: block;
+    }
+    .title_pc{
         display: none;
     }
 }
