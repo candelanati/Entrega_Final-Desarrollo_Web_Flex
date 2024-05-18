@@ -245,7 +245,18 @@ h3{
     align-items: center;
     gap: 100px;
 }
-#logo_proyecto{
+
+.foto_proyecto_1{
+    position: absolute;
+    height: 220px;
+    color: transparent;
+}
+.foto_proyecto_2{
+    position: absolute;
+    display: none;
+    height: 250px;
+}
+.logo_proyecto{
     position: relative;
     width: 682px;
     height: 220px;
@@ -257,13 +268,7 @@ h3{
     align-items: center;
     transition: all 0.5s ease;
 }
-#foto_proyecto{
-    position: absolute;
-    height: 220px;
-    color: transparent;
-}
-#logo_proyecto:hover{ 
-    
+.logo_proyecto:hover{ 
     color: #D9D9D9;
     background-color: rgba(0, 0, 0, 0.70);
 }
@@ -280,143 +285,13 @@ h3{
     width: 200px;
 }
 
-/*@media screen and (max-width:600px) {
-    #foto_proyecto{
-        height: 90px;
-    }
-    #logo_proyecto{
-        height: 90px;
-        width: 275px;
-    }
-}*/
-
-@media screen and (max-width:1900px) {
-  /*agrgegar % cards*/  
-}
-@media screen and (max-width:1100px) {
-    .center_column{
-        align-items: normal;
-    }
-    .contact_page{
-        width: 100%;
-    }
-    #form_header{
-        width: 100%;
-    }
-    main{
-        padding-inline: 50px;
-    }
-    nav{
-        padding-inline: 0px;
-    }
-    nav ul{
-        margin-inline: 30px;
-    }
-    .pdf_preview_page{
-        display: block;
-    }
-    .pdf_preview{
-        display: none;
-    }
-    #foto_proyecto{
-        height: 150px;
-    }
-    #logo_proyecto{
-        height: 150px;
-        width: 465px;
-    }
-}
-@media screen and (max-width:1200px) {
-    nav div {
-        display: none;
-    }
-    .contacto_nav{
-        display: none;
-    }
-    .hamburger_menu{
-        display: block;
-    }
-    .hamburger_menu div{
-        display: block;
-    }
-    #foto_proyecto{
-        height: 150px;
-    }
-    #logo_proyecto{
-        height: 100px;
-        width: 400px;
-    }
-}
-@media screen and (max-width:1700px) {
-    #section_proyectos{
-        flex-direction: column;
-    }
-}
-@media screen and (max-width:600px) {
-    #sobre_mi-pc{
-        display:none;
-    }
-    #sobre_mi-mobile{
-        display:block;
-    }
-    #banner_example_2{
-        display:block;
-    }
-    #banner_example{
-        display: none;
-    }
-    .contacto_nav{
-        display: none;
-    }
-}
-@media screen and (max-width:400px){
-    #banner_example{
-        display: none;
-    }
-    #banner_example_2{
-        display: none;
-    }
-    #banner_example_3{
-        display: block;
-    }
-    main{
-        padding-inline: 20px;
-    }
-    .contacto_nav{
-        display: none;
-    }
-    .title_mobile{
-        display: block;
-    }
-    .title_pc{
-        display: none;
-    }
-}
-
-.note{
-    font-weight: 400;
-    font-size: small;
-}
-
-.center_text{
-    text-align: center;
-}
-
-.left_text{
-    text-align:left;
-}
-
-#Message{
-   resize: none; 
-}
-
-
 
 /*CARDS*/
 .card{
     background-color: #d9d9d9;
     position: relative;
     box-shadow: 0 70px 50px rgba(1, 1, 1, 1); /* Apply box shadow */
+    width: 40%;
 }
 /*slides*/
 .sliding-photo{
@@ -483,6 +358,178 @@ h3{
     background-color: rgb(231, 113, 231);
     border-color: transparent;
 }
+
+
+
+
+/*@media screen and (max-width:600px) {
+    #foto_proyecto{
+        height: 90px;
+    }
+    #logo_proyecto{
+        height: 90px;
+        width: 275px;
+    }
+}*/
+
+@media screen and (max-width:1900px) {
+    /*cards section para notebook*/
+    .card{
+        width: 40%;
+    }
+    .sliding-photo{
+        top: 10px;
+        width: 385px;
+    }
+    .section-portfolio:hover .sliding-photo {
+        transform: translateX(350px);
+    }
+    .section-portfolio:hover .slide-2{
+        transform: translateX(650px);
+    }
+    .section-curriculum:hover .sliding-photo {
+        transform: translateX(-325px);
+    }
+    .section-curriculum:hover .slide-2{
+        transform: translateX(-600px);
+    }
+
+    /*cambio foto proyecto*/
+    .foto_proyecto_1{
+        display: none;
+    }
+    .foto_proyecto_2{
+        display: block;
+    }
+    .logo_proyecto{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .center_column{
+        align-items: normal;
+    }
+    .contact_page{
+        width: 100%;
+    }
+    #form_header{
+        width: 100%;
+    }
+    main{
+        padding-inline: 50px;
+    }
+    nav{
+        padding-inline: 0px;
+    }
+    nav ul{
+        margin-inline: 30px;
+    }
+    .pdf_preview_page{
+        display: block;
+    }
+    .pdf_preview{
+        display: none;
+    }
+    #foto_proyecto{
+        height: 150px;
+    }
+    #logo_proyecto{
+        height: 150px;
+        width: 465px;
+    }
+}
+@media screen and (max-width:1200px) {
+    nav div {
+        display: none;
+    }
+    .contacto_nav{
+        display: none;
+    }
+    .hamburger_menu{
+        display: block;
+    }
+    .hamburger_menu div{
+        display: block;
+    }
+    #foto_proyecto{
+        height: 150px;
+    }
+    #logo_proyecto{
+        height: 100px;
+        width: 400px;
+    }
+
+}
+@media screen and (max-width:600px) {
+    #section_proyectos{
+        flex-direction: column;
+        align-items: center;/*VER*/
+        justify-content: center;/*VER*/
+    }
+
+    #sobre_mi-pc{
+        display:none;
+    }
+    #sobre_mi-mobile{
+        display:block;
+    }
+    #banner_example_2{
+        display:block;
+    }
+    #banner_example{
+        display: none;
+    }
+    .contacto_nav{
+        display: none;
+    }
+}
+@media screen and (max-width:400px){
+    #banner_example{
+        display: none;
+    }
+    #banner_example_2{
+        display: none;
+    }
+    #banner_example_3{
+        display: block;
+    }
+    main{
+        padding-inline: 20px;
+    }
+    .contacto_nav{
+        display: none;
+    }
+    .title_mobile{
+        display: block;
+    }
+    .title_pc{
+        display: none;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+.note{
+    font-weight: 400;
+    font-size: small;
+}
+
+.center_text{
+    text-align: center;
+}
+
+.left_text{
+    text-align:left;
+}
+
+#Message{
+   resize: none; 
+}
+
+
+
 
 /*SPACINGS*/
 .spacing-0{
