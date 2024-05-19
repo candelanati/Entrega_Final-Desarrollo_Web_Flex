@@ -26,7 +26,9 @@ main{
 
 header {
    background-color: rgb(28, 28, 28);
-    
+   position: sticky;
+   z-index: 50;
+   top: 0px;
 }
 
 footer{
@@ -40,13 +42,8 @@ nav{
     /*color: rgb(255, 255, 255);*/
     padding: 15px; 
     width: 100%;
-   
     margin: auto;
     list-style: none;
-    
-
-    position: sticky;
-    top: 0px;
 }
 nav ul{
     padding-left: 0px;
