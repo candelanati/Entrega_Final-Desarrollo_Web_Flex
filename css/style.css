@@ -524,13 +524,15 @@ h3{
         width: 100%;
     }
 }
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     #section_proyectos{
         flex-direction: column;
         align-items: center;/*VER*/
         justify-content: center;/*VER*/
     }
+}
+@media screen and (max-width:600px) {
+    
 
     #sobre_mi-pc{
         display:none;
