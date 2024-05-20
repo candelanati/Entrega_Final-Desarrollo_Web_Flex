@@ -388,7 +388,6 @@ h4{
     height: 500px;
     margin-inline: auto;
 }
-
 .carousel-item > .card{
     width: 100%;
     height: 390px;
@@ -439,11 +438,21 @@ h4{
     }
 }
 @media screen and (max-width:1500px) {
+    .card-pc{
+        display: none;
+    }
+    .carousel{
+        display: block;
+    }
     .sliding-photo{
         display: none;
     }
-    .card{
-        width: 80%;
+    .carousel-item > .card{
+        width: 400px;
+        margin: auto;
+    }
+    .carousel-item > img{
+        height: 450px;
         margin: auto;
     }
     .carousel{
@@ -485,12 +494,7 @@ h4{
         width: 465px;
     }
 
-    .card-pc{
-        display: none;
-    }
-    .carousel{
-        display: block;
-    }
+
     #logos{
         grid-template-columns: repeat(2,200px);
         grid-template-rows: repeat(2,200px);
@@ -533,11 +537,7 @@ h4{
             transform: translateX(-575px);
         }
 }
-@media screen and (max-width:900px) {
-    .card{
-        width: 100%;
-    }
-}
+
 @media screen and (max-width:800px) {
     #section_proyectos{
         flex-direction: column;
@@ -577,6 +577,11 @@ h4{
     }
     .carousel-item > img{
         height: 350px;
+    }
+    .carousel-item > .card{
+        width: 300px;
+        height: 360px;
+        margin: auto;
     }
 }
 @media screen and (max-width:400px){
