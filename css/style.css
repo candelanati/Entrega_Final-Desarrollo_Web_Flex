@@ -482,6 +482,11 @@ h3{
     .carousel{
         display: block;
     }
+    #logos{
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(2,200px);
+    }
+    
 }
 @media screen and (max-width:1200px) {
     nav div {
@@ -529,6 +534,14 @@ h3{
         flex-direction: column;
         align-items: center;/*VER*/
         justify-content: center;/*VER*/
+    }
+    #logos{
+        grid-template-columns: repeat(2,150px);
+        grid-template-rows: repeat(2,150px);
+        gap:20px;
+    }
+    #logos img{
+        width: 150px;
     }
 }
 @media screen and (max-width:600px) {
@@ -578,6 +591,15 @@ h3{
     }
     .title_pc{
         display: none;
+    }
+
+    #logos{
+        grid-template-columns: repeat(2,150px);
+        grid-template-rows: repeat(2,150px);
+        gap:15px;
+    }
+    #logos img{
+        width: 150px;
     }
 
 }
