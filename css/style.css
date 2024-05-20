@@ -179,12 +179,14 @@ h4{
 
 .pdf_preview_page{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
     width: 100%;
     background-color: #D9D9D9;
     border-radius: 5px;
+    color: #080808;
 }
 .pdf_preview{
     width: 100%;
