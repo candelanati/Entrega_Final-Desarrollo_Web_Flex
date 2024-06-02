@@ -1,0 +1,22 @@
+footer{
+    #contact{
+        margin:auto;
+        text-align: center;
+        a{
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            /*no se por que no anda*/
+            margin-bottom: 6px;
+        
+            &:hover{
+                color:rgb(230, 190, 230);
+                transition: color .2s ease-in-out;
+            }
+        }
+        h2{
+            margin-bottom: 10px;
+            color: rgb(231, 113, 231);
+        }
+    }
+}

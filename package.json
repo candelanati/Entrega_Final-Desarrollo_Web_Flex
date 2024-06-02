@@ -1,0 +1,12 @@
+{
+  "name": "preentrega2-lanati_candela",
+  "version": "1.0.0",
+  "description": "Bienvenido a mi repositorio de GitHub donde encontrarás el código fuente de mi tarjeta personal virtual. Esta página web no solo sirve como una herramienta útil para mi vida personal y profesional, sino que también es una entrega para una de las etapas del curso de Desarrollo Web Flex en Coderhouse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
