@@ -7,33 +7,31 @@
 }
 
 body {
-/*fuente*/
+//fuente
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 
-/*propiedades*/
+//propiedades
     width: 100%;
-    background-color: 	#080808;
-    color: rgb(215, 215, 215);
-
+    background-color: $color-fondo;
+    color: $blancox2;
 }
-
 
 main{
     padding-inline: 250px;
 }
 
 header {
-   background-color: rgb(28, 28, 28);
+   background-color: $negro;
    position: sticky;
    z-index: 50;
    top: 0px;
 }
 
 footer{
-    background-color: rgb(28, 28, 28);
+    background-color: $negro;
     padding: 60px 15px;
 }
 
@@ -60,4 +58,62 @@ h4{
 p{
     /*se pone automaticamente margin-bottom:1rem sino*/
     margin-bottom: 0px;
+}
+
+.resaltado {
+    color: $rosa;
+    font-weight: 700;
+}
+
+.note{
+    font-weight: 400;
+    font-size: small;
+}
+
+.center_text{
+    text-align: center;
+}
+
+.left_text{
+    text-align:left;
+}
+
+.web_button{
+    border-radius: 10px;
+    padding: 6px;
+    padding-inline: 20px;
+    border-color: transparent;
+    background-color: #D9D9D9;
+    font-weight: 700;
+    text-decoration: none;
+    color: #080808;
+    font-size: medium;
+    width: fit-content;
+    align-self: center;
+    transition: all 0.25s ease;
+    &:hover{
+        background-color:rgb(231, 113, 231);
+    }
+}
+
+
+#Message{
+   resize: none; 
+}
+
+//SPACINGS
+.spacing-0{
+    margin-top: 8px;
+}
+.spacing-1{
+    margin-top: 16px;
+}
+.spacing-2{
+    margin-top: 30px;
+}
+.spacing-3{
+    margin-top: 70px;
+}
+.spacing-4{
+    margin-top: 100px;
 }

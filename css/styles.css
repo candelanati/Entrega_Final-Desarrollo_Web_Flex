@@ -6,12 +6,10 @@
 }
 
 body {
-  /*fuente*/
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /*propiedades*/
   width: 100%;
   background-color: #080808;
   color: rgb(215, 215, 215);
@@ -55,6 +53,66 @@ h4 {
 p {
   /*se pone automaticamente margin-bottom:1rem sino*/
   margin-bottom: 0px;
+}
+
+.resaltado {
+  color: rgb(231, 113, 231);
+  font-weight: 700;
+}
+
+.note {
+  font-weight: 400;
+  font-size: small;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.left_text {
+  text-align: left;
+}
+
+.web_button {
+  border-radius: 10px;
+  padding: 6px;
+  padding-inline: 20px;
+  border-color: transparent;
+  background-color: #D9D9D9;
+  font-weight: 700;
+  text-decoration: none;
+  color: #080808;
+  font-size: medium;
+  width: fit-content;
+  align-self: center;
+  transition: all 0.25s ease;
+}
+.web_button:hover {
+  background-color: rgb(231, 113, 231);
+}
+
+#Message {
+  resize: none;
+}
+
+.spacing-0 {
+  margin-top: 8px;
+}
+
+.spacing-1 {
+  margin-top: 16px;
+}
+
+.spacing-2 {
+  margin-top: 30px;
+}
+
+.spacing-3 {
+  margin-top: 70px;
+}
+
+.spacing-4 {
+  margin-top: 100px;
 }
 
 header .nav_mobile {
@@ -118,6 +176,178 @@ header .hamburger_menu div {
   width: 26px;
   height: 4px;
   border-radius: 10px;
+}
+
+#banner_example {
+  width: 100%;
+}
+
+#banner_example_2 {
+  display: none;
+  width: 100%;
+}
+
+#banner_example_3 {
+  display: none;
+  width: 100%;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.name {
+  /*font-size: small;*/
+  font-weight: 200;
+  font-size: x-large;
+  margin-left: 10px;
+}
+
+.title_mobile {
+  display: none;
+  font-size: x-large;
+}
+
+#sobre_mi-mobile {
+  display: none;
+}
+
+#tecnologias svg {
+  height: 25px;
+  transition: all 0.25s ease;
+}
+#tecnologias svg:hover {
+  transform: translateY(-6px) scale(1.15);
+}
+
+.card {
+  background-color: #d9d9d9;
+  position: relative;
+  box-shadow: 0 70px 50px rgb(1, 1, 1);
+  width: 40%;
+}
+
+.sliding-photo {
+  width: 450px;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 20px;
+  z-index: -2;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-portfolio:hover .sliding-photo {
+  transform: translateX(400px);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 100px rgb(1, 1, 1);
+  background-color: #363636;
+}
+
+.section-portfolio:hover .slide-2 {
+  transform: translateX(700px);
+  transition: all 0.5s ease-in-out 0.1s;
+  background-color: #272727;
+}
+
+.section-portfolio:hover .slide-3 {
+  transform: translateX(1000px);
+  transition: all 0.5s ease-in-out 0.2s;
+  background-color: #212121;
+}
+
+.section-curriculum {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.section-curriculum:hover .sliding-photo {
+  transform: translateX(-325px);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 100px rgb(1, 1, 1);
+  background-color: #363636;
+}
+
+.section-curriculum:hover .slide-2 {
+  transform: translateX(-650px);
+  transition: all 0.5s ease-in-out 0.1s;
+  background-color: #272727;
+}
+
+.section-curriculum:hover .slide-3 {
+  transform: translateX(-950px);
+  transition: all 0.5s ease-in-out 0.2s;
+  background-color: #212121;
+}
+
+.btn {
+  background-color: #080808;
+  border-color: transparent;
+  transition: all 0.5s ease;
+  padding-inline: 20px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  color: #080808;
+  font-weight: 700;
+  background-color: rgb(231, 113, 231);
+  border-color: transparent;
+}
+
+.carousel {
+  display: none;
+}
+
+.carousel-item > img {
+  padding: 0.5px;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  height: 500px;
+  margin-inline: auto;
+}
+
+.carousel-item > .card {
+  width: 100%;
+  height: 390px;
+}
+
+#section_proyectos {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.foto_proyecto_1 {
+  position: absolute;
+  height: 220px;
+  color: transparent;
+}
+
+.foto_proyecto_2 {
+  position: absolute;
+  display: none;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.logo_proyecto {
+  position: relative;
+  width: 682px;
+  height: 220px;
+  text-align: center;
+  color: transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.logo_proyecto:hover {
+  color: #D9D9D9;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 footer #contact {
