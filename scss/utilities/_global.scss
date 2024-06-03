@@ -36,24 +36,13 @@ footer{
 }
 
 
-h1{
-    font-weight: 900;
-    font-size: xx-large;
-}
+h1{@extend %titulo;}
 
-h2{
-    font-weight: bold;
-    font-size:x-large;
-}
+h2{@extend %subtitulo;}
 
-h3{
-    font-weight: 400;
-}
+h3{@extend %subtitulo2;}
 
-h4{
-    font-weight: 200;
-    font-size: large;
-}
+h4{@extend %subtitulo3;}
 
 p{
     /*se pone automaticamente margin-bottom:1rem sino*/
