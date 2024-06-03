@@ -78,13 +78,10 @@ p{
     text-align:left;
 }
 .center_column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column, center, center, inherit);
 }
 .center_row{
-    display: flex;
-    align-items: center;
+    @include flex (row, center, center, inherit);
 }
 
 

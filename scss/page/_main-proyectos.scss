@@ -34,12 +34,12 @@
 
 #logos{
     justify-content: center;
-    border-color: #D9D9D9;
+    border-color: $blanco;
     display: grid;
     grid-template-columns: repeat(4,200px);
     grid-template-rows: repeat(1,200px);
     gap: 60px;
-    justify-content: center;
+
     img{
         width: 200px;
     }
