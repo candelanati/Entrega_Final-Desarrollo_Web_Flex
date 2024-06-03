@@ -1,0 +1,170 @@
+//BANNER HEADER
+#banner_example{
+    width: 100%;
+}
+#banner_example_2{
+    display: none;
+    width: 100%;
+}
+#banner_example_3{
+    display:none;
+    width: 100%;
+}
+
+.title{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.name{
+    /*font-size: small;*/
+    font-weight: 200;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.title_mobile{
+    display:none;
+    font-size: x-large;
+}
+
+//SOBRE MI SECTION
+#sobre_mi-mobile{
+    display:none;
+}
+//Svg tecnologías
+#tecnologias svg{
+    height: 25px;
+    transition: all 0.25s ease;
+    &:hover{
+        transform: translateY(-6px) scale(1.15);
+    }
+}
+
+
+//CARDS
+.card{
+    background-color: #d9d9d9;
+    position: relative;
+    box-shadow: 0 70px 50px rgba(1, 1, 1, 1); //Apply box shadow 
+    width: 40%;
+}
+//slides
+.sliding-photo{
+    width: 450px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 20px;
+    z-index: -2;
+    transition: all .5s ease-in-out;
+}
+//porfolio slides
+.section-portfolio:hover .sliding-photo {
+    transform: translateX(400px);
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 100px rgba(1, 1, 1, 1); //Apply box shadow 
+    background-color: #363636;
+}
+.section-portfolio:hover .slide-2{
+    transform: translateX(700px);
+    transition: all .5s ease-in-out .1s;
+    background-color: #272727;
+}
+.section-portfolio:hover .slide-3{
+    transform: translateX(1000px);
+    transition: all .5s ease-in-out .2s;
+    background-color: #212121;
+}
+
+
+//curriculum align
+.section-curriculum{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+//curriculum slides
+.section-curriculum:hover .sliding-photo {
+    transform: translateX(-325px);
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 100px rgba(1, 1, 1, 1); //Apply box shadow 
+    background-color: #363636;
+}
+.section-curriculum:hover .slide-2{
+    transform: translateX(-650px);
+    transition: all .5s ease-in-out .1s;
+    background-color: #272727;
+}
+.section-curriculum:hover .slide-3{
+    transform: translateX(-950px);
+    transition: all .5s ease-in-out .2s;
+    background-color: #212121;
+}
+
+//Card button
+.btn{
+    background-color: #080808;
+    border-color: transparent;
+    transition: all 0.5s ease;
+    padding-inline: 20px;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: #080808;
+    font-weight: 700;
+    background-color: rgb(231, 113, 231);
+    border-color: transparent;
+}
+
+
+//CAROUSEL
+.carousel{
+    display: none;
+}
+.carousel-item > img{
+    padding: 0.5px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    height: 500px;
+    margin-inline: auto;
+}
+.carousel-item > .card{
+    width: 100%;
+    height: 390px;
+}
+
+//SECTION PROYECTOS
+#section_proyectos{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.foto_proyecto_1{
+    position: absolute;
+    height: 220px;
+    color: transparent;
+}
+.foto_proyecto_2{
+    position: absolute;
+    display: none;
+    height: 250px;
+    border-radius: 8px;
+}
+.logo_proyecto{
+    position: relative;
+    width: 682px;
+    height: 220px;
+    text-align: center;
+    color: transparent;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    &:hover{
+        color: #D9D9D9;
+        background-color: rgba(0, 0, 0, 0.70);
+    }
+}
