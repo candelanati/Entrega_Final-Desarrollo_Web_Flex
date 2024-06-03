@@ -1,5 +1,24 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+h1 {
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: large;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -12,7 +31,7 @@ body {
   font-weight: 400;
   font-style: normal;
   width: 100%;
-  background-color: #080808;
+  background: linear-gradient(120deg, #080808, #080808, #303030);
   color: rgb(215, 215, 215);
 }
 
@@ -30,20 +49,6 @@ header {
 footer {
   background-color: rgb(28, 28, 28);
   padding: 60px 15px;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: xx-large;
-}
-
-h3 {
-  font-weight: 400;
-}
-
-h4 {
-  font-weight: 200;
-  font-size: large;
 }
 
 p {
@@ -488,6 +493,216 @@ footer #contact a:hover {
 footer #contact h2 {
   margin-bottom: 10px;
   color: rgb(231, 113, 231);
+}
+
+@media screen and (max-width: 1800px) {
+  /*cards section para notebook*/
+  .card {
+    width: 40%;
+  }
+  .sliding-photo {
+    top: 10px;
+    width: 385px;
+  }
+  .section-portfolio:hover .sliding-photo {
+    transform: translateX(350px);
+  }
+  .section-portfolio:hover .slide-2 {
+    transform: translateX(650px);
+  }
+  .section-curriculum:hover .sliding-photo {
+    transform: translateX(-325px);
+  }
+  .section-curriculum:hover .slide-2 {
+    transform: translateX(-600px);
+  }
+  /*cambio foto proyecto*/
+  .foto_proyecto_1 {
+    display: none;
+  }
+  .foto_proyecto_2 {
+    display: block;
+  }
+  .logo_proyecto {
+    height: 250px;
+    width: 250px;
+  }
+  /*info proyecto*/
+  .info_proyectos .card {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .card-pc {
+    display: none;
+  }
+  .carousel {
+    display: block;
+    height: 500px;
+  }
+  .sliding-photo {
+    display: none;
+  }
+  .carousel-item > .card {
+    width: 400px;
+    margin: auto;
+  }
+  .carousel-item > img {
+    height: 450px;
+    margin: auto;
+  }
+  /*info proyecto*/
+  .info_proyectos {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .center_column {
+    align-items: normal;
+  }
+  .contact_page {
+    width: 100%;
+  }
+  #form_header {
+    width: 100%;
+  }
+  main {
+    padding-inline: 50px;
+  }
+  nav {
+    padding-inline: 0px;
+  }
+  nav ul {
+    margin-inline: 30px;
+  }
+  .pdf_preview {
+    display: none;
+  }
+  .pdf_preview_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #foto_proyecto {
+    height: 150px;
+  }
+  #logo_proyecto {
+    height: 150px;
+    width: 465px;
+  }
+  #logos {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav div {
+    display: none;
+  }
+  .contacto_nav {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+  .hamburger_menu div {
+    display: block;
+  }
+  main {
+    padding-inline: 50px;
+  }
+  /*cards*/
+  .sliding-photo {
+    top: 20px;
+    width: 350px;
+  }
+  .section-portfolio:hover .sliding-photo {
+    transform: translateX(325px);
+  }
+  .section-portfolio:hover .slide-2 {
+    transform: translateX(600px);
+  }
+  .section-curriculum:hover .sliding-photo {
+    transform: translateX(-300px);
+  }
+  .section-curriculum:hover .slide-2 {
+    transform: translateX(-575px);
+  }
+}
+@media screen and (max-width: 800px) {
+  #section_proyectos {
+    flex-direction: column;
+    align-items: center; /*VER*/
+    justify-content: center; /*VER*/
+  }
+  #logos {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+  }
+  #logos img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #sobre_mi-pc {
+    display: none;
+  }
+  #sobre_mi-mobile {
+    display: block;
+  }
+  #banner_example_2 {
+    display: block;
+  }
+  #banner_example {
+    display: none;
+  }
+  .contacto_nav {
+    display: none;
+  }
+  .carousel {
+    height: 390px;
+  }
+  .carousel-item > img {
+    height: 350px;
+  }
+  .carousel-item > .card {
+    width: 300px;
+    height: 360px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  #banner_example {
+    display: none;
+  }
+  #banner_example_2 {
+    display: none;
+  }
+  #banner_example_3 {
+    display: block;
+  }
+  main {
+    padding-inline: 20px;
+  }
+  .contacto_nav {
+    display: none;
+  }
+  .title_mobile {
+    display: block;
+  }
+  .title_pc {
+    display: none;
+  }
+  #logos {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 15px;
+  }
+  #logos img {
+    width: 150px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
