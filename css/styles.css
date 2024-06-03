@@ -569,10 +569,10 @@ footer #contact h2 {
   main {
     padding-inline: 50px;
   }
-  nav {
+  header nav {
     padding-inline: 0px;
   }
-  nav ul {
+  header nav ul {
     margin-inline: 30px;
   }
   .pdf_preview {
@@ -597,16 +597,16 @@ footer #contact h2 {
   }
 }
 @media screen and (max-width: 1200px) {
-  nav div {
+  header nav div {
     display: none;
   }
-  .contacto_nav {
+  header .contacto_nav {
     display: none;
   }
-  .hamburger_menu {
+  header .hamburger_menu {
     display: block;
   }
-  .hamburger_menu div {
+  header .hamburger_menu div {
     display: block;
   }
   main {
@@ -686,7 +686,7 @@ footer #contact h2 {
   main {
     padding-inline: 20px;
   }
-  .contacto_nav {
+  header .contacto_nav {
     display: none;
   }
   .title_mobile {
