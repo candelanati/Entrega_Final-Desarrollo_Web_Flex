@@ -74,6 +74,17 @@ p {
   text-align: left;
 }
 
+.center_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center_row {
+  display: flex;
+  align-items: center;
+}
+
 .web_button {
   border-radius: 10px;
   padding: 6px;
@@ -223,7 +234,7 @@ header .hamburger_menu div {
 }
 
 .card {
-  background-color: #d9d9d9;
+  background-color: #D9D9D9;
   position: relative;
   box-shadow: 0 70px 50px rgb(1, 1, 1);
   width: 40%;
@@ -304,7 +315,7 @@ header .hamburger_menu div {
 
 .carousel-item > img {
   padding: 0.5px;
-  background-color: #d9d9d9;
+  background-color: #D9D9D9;
   border-radius: 8px;
   height: 500px;
   margin-inline: auto;

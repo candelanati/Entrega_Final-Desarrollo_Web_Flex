@@ -44,7 +44,7 @@
 
 //CARDS
 .card{
-    background-color: #d9d9d9;
+    background-color: $blanco;
     position: relative;
     box-shadow: 0 70px 50px rgba(1, 1, 1, 1); //Apply box shadow 
     width: 40%;
@@ -105,16 +105,16 @@
 
 //Card button
 .btn{
-    background-color: #080808;
+    background-color: $color-fondo;
     border-color: transparent;
     transition: all 0.5s ease;
     padding-inline: 20px;
     border-radius: 10px;
 }
 .btn:hover{
-    color: #080808;
+    color: $color-fondo;
     font-weight: 700;
-    background-color: rgb(231, 113, 231);
+    background-color: $rosa;
     border-color: transparent;
 }
 
@@ -125,7 +125,7 @@
 }
 .carousel-item > img{
     padding: 0.5px;
-    background-color: #d9d9d9;
+    background-color: $blanco;
     border-radius: 8px;
     height: 500px;
     margin-inline: auto;
@@ -164,7 +164,7 @@
     align-items: center;
     transition: all 0.5s ease;
     &:hover{
-        color: #D9D9D9;
+        color: $blanco;
         background-color: rgba(0, 0, 0, 0.70);
     }
 }
