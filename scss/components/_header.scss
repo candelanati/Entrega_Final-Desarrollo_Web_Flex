@@ -8,9 +8,11 @@ header{
         flex-direction: column;
         align-items: center;
         gap: 5px;
+        
         a{
             text-decoration: none;
             padding: 2px;
+            color: $blanco;
         }
     }
     //NAV GRAL
@@ -52,7 +54,6 @@ header{
     }
     .nav_link{
         text-decoration: none;
-        
         &:hover{
             color:rgb(230, 190, 230);
             transition: color .2s ease-in-out;
